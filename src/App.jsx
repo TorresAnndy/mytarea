@@ -5,6 +5,7 @@ import './css/App.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Ejercicio1 from './pages/Ejercicio1.jsx'
+import EuroDolar from './pages/EuroDolar.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +24,7 @@ function App() {
 
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/ejercicio1' element={<Ejercicio1 />} />
+            <Route path='/ejercicio1' element={<EuroDolar />} />
           </Routes>
         </BrowserRouter>
     </>
