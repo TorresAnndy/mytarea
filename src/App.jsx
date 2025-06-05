@@ -4,7 +4,7 @@ import './css/Menu.css'
 import './css/App.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
-import Ejercicio1 from './pages/Ejercicio1.jsx'
+import Grados from './pages/Grados.jsx'
 import EuroDolar from './pages/EuroDolar.jsx'
 
 function App() {
@@ -17,14 +17,16 @@ function App() {
           <nav>
             <ul>
               <li><Link to='/'>Inicio</Link></li>
-              <li><Link to='/ejercicio1'>Ejercicio1</Link></li>
+              <li><Link to='/eurodolar'>Euro Dolar</Link></li>
+              <li><Link to='/grados'>Grados</Link></li>
               
             </ul>
           </nav>
 
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/ejercicio1' element={<EuroDolar />} />
+            <Route path='/eurodolar' element={<EuroDolar />} />
+            <Route path='/grados' element={<Grados />} />
           </Routes>
         </BrowserRouter>
     </>
