@@ -9,7 +9,3 @@
 - iniciar servidor web
    ```bash
   npm run dev
-
-
-
-
